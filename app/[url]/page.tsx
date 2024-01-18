@@ -44,7 +44,7 @@ const Page = (props: any) => {
     };
 
     const fetchData = async () => {
-        const result = await getPageRes("/testing");
+        const result = await getPageRes(`/${props.params.url}`);
         setEntries(result[0]);
     };
 
